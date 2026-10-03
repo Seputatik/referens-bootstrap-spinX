@@ -9,6 +9,26 @@
   .app{zoom:clamp(1,calc((100vw - 24px) / 1024),1.65);}
 }
 @media(max-width:1024px){.app{transform-origin:top left;transform:scale(calc(100vw / 1024));margin:0;height:1536px}body{overflow-x:hidden}}
+
+/* Reference visual polish — geometry intentionally unchanged */
+<style id="reference-polish">
+:root{--line:rgba(255,255,255,.09);--lime-glow:0 0 24px rgba(200,255,46,.16)}
+body{background:#050807;color:#f2f4ee;-webkit-font-smoothing:antialiased}
+.panel,.promo,.minihero,.game,.livecard,.provider,.bottompromo{border-color:var(--line)}
+.header{position:relative;z-index:5}.search{background:#12181b;border-color:rgba(255,255,255,.10)}
+.hbtn{background:#101517;border-color:rgba(255,255,255,.10);transition:.18s ease}.hbtn:hover{border-color:rgba(200,255,46,.35);background:#151b1b}.hbtn.reg,.btn-lime{box-shadow:var(--lime-glow);transition:.18s ease}.hbtn.reg:hover,.btn-lime:hover{background:var(--lime2);transform:translateY(-1px)}
+.navitem{transition:.16s ease}.navitem:not(.active):hover{background:#171d19;color:#fff}.navitem.active{box-shadow:0 0 22px rgba(200,255,46,.18)}
+.hero,.minihero,.promo,.bottompromo{isolation:isolate}.hero:after,.minihero:after,.promo:after,.bottompromo:after{pointer-events:none}
+.hero-copy h1{letter-spacing:-.035em;text-shadow:0 2px 18px rgba(0,0,0,.45)}
+.cats{position:relative}.cat{border:1px solid rgba(255,255,255,.035);transition:.16s ease}.cat:not(.active):hover{background:#22282a;border-color:rgba(200,255,46,.16)}.cat.active{box-shadow:0 0 20px rgba(200,255,46,.12)}
+.section-title{letter-spacing:.01em}.section-title .more{border:1px solid rgba(255,255,255,.04);color:#d9ded9}
+.game,.livecard{box-shadow:0 7px 20px rgba(0,0,0,.16);transition:transform .18s ease,border-color .18s ease}.game:hover,.livecard:hover{transform:translateY(-2px);border-color:rgba(200,255,46,.25)}
+.game img,.livecard img{display:block}.heart{border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(4px);font-size:16px}.badge-x{letter-spacing:.02em}
+.jackbig{border:1px solid rgba(255,255,255,.08)}.jacktile{background:linear-gradient(180deg,#183126,#0b1712);border-color:rgba(100,207,143,.24)}
+.provider{background:#151b1e;border-color:rgba(255,255,255,.10);transition:.16s ease}.provider:hover{border-color:rgba(200,255,46,.28);background:#1b221f}
+.bottom-promos{align-items:stretch}.bottompromo{box-shadow:0 10px 28px rgba(0,0,0,.16)}.bottompromo:after{background:linear-gradient(90deg,rgba(5,8,7,.88) 0%,rgba(5,8,7,.54) 42%,rgba(5,8,7,.04) 78%)}
+.footer{border-top-color:rgba(255,255,255,.10);align-items:start}.footer .logo{line-height:1}.footer h5{margin-bottom:8px}.footer a{transition:.15s ease}.footer a:hover{color:var(--lime)}.social i{color:#dfe6df}.age{border-color:rgba(255,255,255,.55)}
+</style>
 </style></head><body><div class="app">
 <aside class="sidebar"><div class="d-flex align-items-center gap-2 mb-2"><div class="back"><i class="bi bi-chevron-left"></i></div><div class="logo">Spin<b>X</b></div></div>
 <div class="panel navbox"><div class="navitem active"><i class="bi bi-house-fill"></i>Главная</div><div class="navitem"><i class="bi bi-window-stack"></i>Слоты</div><div class="navitem"><i class="bi bi-person-fill"></i>Live Casino</div><div class="navitem"><i class="bi bi-rocket-takeoff-fill"></i>Crash Games</div><div class="navitem"><i class="bi bi-stars"></i>Настольные</div><div class="navitem"><i class="bi bi-gift-fill"></i>Джекпоты</div><div class="navitem"><i class="bi bi-gift"></i>Бонусы</div><div class="navitem"><i class="bi bi-trophy-fill"></i>Турниры</div><div class="navitem"><i class="bi bi-gift-fill"></i>Промоакции</div><div class="navitem"><i class="bi bi-crown-fill"></i>VIP Клуб</div></div>
